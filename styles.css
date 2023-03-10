@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url("./asoggetti.jpg") no-repeat center;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  font-family: "consolas", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border: solid 1px red;
+}
+.container .drag_cont_head {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  border: solid 2px black;
+}
+.container .drag_cont_head div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: solid 1px black;
+}
+.container .drag_drop {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: solid 3px black;
+}
+.container .drag_drop .column {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  border: solid 2px black;
+}
+.container .drag_drop .column .c_object {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  border: solid 1px black;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  background-color: grey;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 15px;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+button:active {
+  background-color: #000;
+}
+
+/*# sourceMappingURL=styles.css.map */

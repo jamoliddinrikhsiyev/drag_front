@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./main.js"></script>
+    <title>Chart</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="drag_cont_head">
+        <div><p>Первый контакт</p></div>
+        <div><p>Переговоры</p></div>
+        <div><p>Подписан договор</p></div>
+        <div><p>Абонент подключен</p></div>
+      </div>
+      <div class="drag_drop">
+        <div
+          id="col_1"
+          class="column column_1"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        >
+          <!-- <div
+            id="obj_1"
+            class="c_object object_1"
+            draggable="true"
+            ondragstart="drag(event)"
+          >
+            <p>object 1</p>
+          </div> -->
+        </div>
+        <div
+          id="col_2"
+          class="column column_2"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        >
+          <!-- <div
+            id="obj_2"
+            class="c_object object_2"
+            draggable="true"
+            ondragstart="drag(event)"
+          >
+            <p>object 2</p>
+          </div> -->
+        </div>
+        <div
+          id="col_3"
+          class="column column_3"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        >
+          <!-- <div
+            id="obj_3"
+            class="c_object object_3"
+            draggable="true"
+            ondragstart="drag(event)"
+          >
+            <p>object 3</p>
+          </div> -->
+        </div>
+        <div
+          id="col_4"
+          class="column column_4"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        >
+          <!-- <div
+            id="obj_4"
+            class="c_object object_4"
+            draggable="true"
+            ondragstart="drag(event)"
+          >
+            <p>object 4</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id="clear_storage" type="button">Clear Storage</button>
+  </body>
+</html>
