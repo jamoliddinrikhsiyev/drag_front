@@ -23,38 +23,39 @@ body {
   display: flex;
   flex-direction: column;
   @include sizeSquare(100%);
-  border: solid 1px red;
+  // border: solid 1px red;
   .drag_cont_head {
     display: flex;
     width: 100%;
     height: 40px;
-    border: solid 2px black;
+    // border: solid 2px black;
     div {
       display: flex;
       align-items: center;
       justify-content: center;
       width: 100%;
       height: 100%;
-      border: solid 1px black;
+      border: dashed 1px grey;
+      border-bottom: none;
     }
   }
   .drag_drop {
     display: flex;
     width: 100%;
     height: 100%;
-    border: solid 3px black;
+    border: solid 1px grey;
     .column {
       display: flex;
       flex-direction: column;
       width: 25%;
-      border: solid 2px black;
+      border: dashed 1px grey;
       .c_object {
         display: inline-flex;
         align-items: center;
         justify-content: center;
         width: 100%;
         height: 40px;
-        border: solid 1px black;
+        border: solid 1px rgba(0, 0, 0, 0.5);
       }
     }
   }

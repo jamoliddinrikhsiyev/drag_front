@@ -74,4 +74,5 @@ function aa(col, obj) {
 button.addEventListener("click", (event) => {
   event.preventDefault();
   window.localStorage.clear();
+  alert("Storage was cleared!");
 });
